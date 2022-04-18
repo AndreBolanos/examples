@@ -11,7 +11,7 @@
             overflow-y: auto;
         }
 
-        .form-control-sm {
+        .form-control-sm, .form-select-sm {
             min-height: 1rem;
             padding: 0.15rem 0.5rem;
             font-size: .875rem;
@@ -58,6 +58,7 @@
                                         </div>
                                         <hr>
                                         <div class="formDatos col-md-6">
+                                            <label for="name" class="form-label col-form-label-sm">Caller</label>
                                             <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                                 <option selected disabled>Who is calling?</option>
                                                 <option value="1">Supervisor</option>
@@ -67,7 +68,10 @@
 
                                         </div>
                                         <div class="formDatos col-md-6">
-
+                                            <label for="name" class="form-label col-form-label-sm">Job Title</label>
+                                            <input type="text" class="form-control form-control-sm" id="name" name="name"
+                                                value="{{ old('name') }}" required>
+                                            <b><small><span class="text-danger error-text name_error"></span></small></b>
 
                                         </div>
                                         <div class="formDatos col-md-6">
@@ -98,6 +102,23 @@
                                             <input type="text" class="form-control form-control-sm" id="email" name="email"
                                                 autocomplete="off" value="{{ old('email') }}">
                                             <b><small><span class="text-danger error-text email_error"></span></small></b>
+                                        </div>
+                                        <p class="mb-0 mt-2">Injured Worker</p>
+                                        <div class="formDatos col-md-6">
+                                            <label for="name" class="form-label col-form-label-sm">First
+                                                Name</label>
+                                            <input type="text" class="form-control form-control-sm" id="name" name="name"
+                                                value="{{ old('name') }}" required>
+                                            <b><small><span class="text-danger error-text name_error"></span></small></b>
+
+                                        </div>
+                                        <div class="formDatos col-md-6">
+                                            <label for="lastName" class="form-label col-form-label-sm">Last
+                                                Name</label>
+                                            <input type="text" class="form-control form-control-sm" id="lastName"
+                                                name="lastName" value="{{ old('lastName') }}">
+                                            <b><small><span
+                                                        class="text-danger error-text lastName_error"></span></small></b>
                                         </div>
                                         <h6 class="mb-0 mt-2">Intake Eligibility</h6>
                                         <hr class="mb-1">
