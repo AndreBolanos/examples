@@ -110,9 +110,9 @@
 
         <nav class="navbar navbar-expand-lg navbar-light py-0" style="background-color: #e3f2fd;">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
-                        <div class="d-flex justify-content-center ms-5">
+                        {{-- <div class="d-flex justify-content-center ms-5">
                             <li class="nav-item">
                                 <div class="form-check form-switch nav-link mx-4">
                                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
@@ -139,8 +139,8 @@
                                     <label class="form-check-label" for="flexSwitchCheckChecked">Translator</label>
                                 </div>
                             </li>
-                        </div>
-                        <div class="d-flex justify-content-end ms-5">
+                        </div> --}}
+                        <div class="d-flex justify-content-center">
                             <li class="nav-item">
                                 <a class="nav-link snav mx-3" aria-current="page" href="#"><span
                                         class="fw-bold">Caller
@@ -157,7 +157,11 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link snav mx-3" href="#" tabindex="-1" aria-disabled="true"><span
-                                        class="fw-bold">Other option:</span></a>
+                                        class="fw-bold">Contact ID: </span>123456789</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link snav mx-3" href="#" tabindex="-1" aria-disabled="true"><span
+                                        class="fw-bold">Account Name: </span>Walmart</a>
                             </li>
                         </div>
                     </ul>

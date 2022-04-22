@@ -71,7 +71,7 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link position-relative" id="cc" data-bs-toggle="pill" data-bs-target="#c"
                                         type="button" role="tab" aria-controls="pills-contact"
-                                        aria-selected="false" onclick="checkFocus()">Subjective Assessment
+                                        aria-selected="false" onclick="checkFocus()">ABCD Assessment
                                         <span
                                             class="focusOption  position-absolute top-0 start-50 translate-middle p-2 bg-success border border-light border-3 rounded-circle">
 
